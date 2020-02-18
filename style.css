@@ -1,0 +1,340 @@
+/*  Reset */
+* ,*:after , *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font: 16px/1.5 Georgia ,sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+.site-header {
+    background-color: black;
+}
+
+.site-header .inner {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom :0.1 rem solid rgb(254,254,253);
+
+}
+.site-title p{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color:rgb(254,254,253);
+    padding: 0.5em;
+
+}
+
+.site-nav ul{
+    display:block;
+}
+.site-nav li {
+    display:block;
+    padding: 1em;
+}
+.site-nav a {
+    color:rgb(254,254,253);
+    padding: 1em;
+}
+
+.site-image {
+    min-height: 36em;
+    background-image: url(https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80); 
+    text-align: center;
+    color:white;
+    position: relative;
+}
+.site-image h1 {
+    font-size: 3.6em;
+    font-weight: 500;
+    padding: 0 2em;
+}
+
+.site-image h1:after {
+    display: block;
+    content:'';
+    width: 3rem;
+    margin-left: 9.3em;
+    border-bottom: 0.05em solid rgb(238,75,40);
+}
+.site-image p {
+    font-size: 1.2em;
+    padding: 1em 10em;
+
+}
+.site-image button {
+    padding: 1em 2em;
+    border:none;
+    color:white;
+    border-radius: 1.5em;
+    background-color: rgb(238,75,40);
+}
+
+.site-about {
+    background-color: rgb(238,75,40);
+    text-align: center;
+    padding: 2em 17em;
+    min-height: 20em;
+    color:white;
+
+}
+
+.site-about h2 {
+    font-size: 2em;
+}
+.site-about h2:after{
+    display: block;
+    content:'';
+    width: 3rem;
+    margin-left: 12em;
+    border-bottom: 0.1rem solid white;
+
+}
+
+.site-about p {
+    padding: 2em;
+}
+.site-about button {
+    padding: 1em 2em;
+    border:none;
+    border-radius: 1.5em;
+}
+
+.site-services {
+    padding: 5em;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.site-services h2 {
+    padding-bottom: 2em;
+}
+.site-services h2:after {
+    display: block;
+    content:'';
+    width: 3rem;
+    margin-left: 3em;
+    border-bottom: 0.1rem solid rgb(238,75,40);
+}
+
+.site-services ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-services li:nth-of-type(1):before {
+    display: block;
+    content:'\f3a5';
+    font-family: "Font Awesome 5 Free";
+    color: rgb(238,75,40);
+    font-size: 3em;
+
+}
+.site-services li:nth-of-type(2):before {
+    display: block;
+    content:'\f1d8';
+    font-family: "Font Awesome 5 Free";
+    color: rgb(238,75,40);
+    font-size: 3em;
+
+}
+.site-services li:nth-of-type(3):before {
+    display: block;
+    content:'\f1ea';
+    font-family: "Font Awesome 5 Free";
+    color: rgb(238,75,40);
+    font-size: 3em;
+
+}
+.site-services li:nth-of-type(4):before {
+    display: block;
+    content:'\f004';
+    font-family: "Font Awesome 5 Free";
+    color: rgb(238,75,40);
+    font-size: 3em;
+}
+
+.main-media {
+
+
+}
+.main-media ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main-media li {
+    flex: 0 0 32.5%;
+}
+.main-media a {
+    position: relative;
+    
+
+}
+.main-media a:after {
+    display: block;
+    content: '';
+    position: absolute;
+    padding-top: 100%;
+}
+.main-media img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+    opacity :0.7;
+    border:5px solid white;
+
+}
+.main-media a h4
+{
+    display: block;
+    position: absolute;
+    left: 25%;
+    bottom: 20%;
+    font-size: 1.2em;
+    opacity: 0;
+}
+
+.main-media a p {
+    display: block;
+    position: absolute;
+    left: 25%;
+    bottom: 100%;
+    font-size: 1.5em;
+    opacity: 0;
+}
+.main-media a:hover p,
+.main-media a:hover h4 {
+    opacity: 1;
+    color:white;
+    text-shadow: 0.1rem 0.1rem black;
+}
+.main-media a:hover img {
+    border:5px solid  rgb(238,75,40);
+    opacity: 1;
+
+}
+
+.media-inner {
+    background-color: rgb(34,34,34);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.media-inner h3 {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 2em;
+    padding: 1em;
+    color: white;
+}
+
+.media-inner button {
+    padding: 1em 2em;
+    border:none;
+    border-radius: 1.5em;
+    margin-bottom: 3em;
+}
+
+.site-contacts {
+    padding: 3em 20em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-contacts header {
+    text-align: center;
+}
+
+.site-contacts > ul {
+    display: flex;
+}
+
+.site-contacts li {
+    padding: 1em;
+}
+.site-contacts a {
+    color:black;
+}
+
+.site-contacts h2:after {
+    display: block;
+    content:'';
+    width: 3rem;
+    margin-left: 13.5em;
+    border-bottom: 0.1rem solid rgb(238,75,40);
+}
+
+.site-contacts p {
+   text-align: center;
+   padding-top: 1em;
+}
+
+.site-contacts li:nth-of-type(1):before {
+    display: block;
+    content:'\f09a';
+    font-family: "Font Awesome 5 Brands";
+    color: rgb(238,75,40);
+    font-size: 3em;
+}
+.site-contacts li:nth-of-type(2):before {
+    display: block;
+    content:'\f099';
+    font-family: "Font Awesome 5 Brands";
+    color: rgb(238,75,40);
+    font-size: 3em;
+}
+.site-contacts li:nth-of-type(3):before {
+    display: block;
+    content:'\f0e0';
+    font-family: "Font Awesome 5 Free";
+    color: rgb(238,75,40);
+    font-size: 3em;
+}
+.site-title p:hover{
+    color: rgb(238,75,40);
+
+}
+.site-nav a:hover {
+    background-color: rgb(238,75,40);
+    border-radius: 1em;
+}
+.site-about button
+{
+    outline: none;
+    border:1px solid  rgb(238,75,40);
+}
+.media-inner button,
+.site-image button {
+    outline: none;
+    border:1px solid black;
+}
+
+.site-image button:hover {
+    border:1px solid rgb(238,75,40);
+    cursor: pointer;
+    color:#369;
+}
+.media-inner button:hover,
+.site-about button:hover {
+    border:1px solid white;
+    cursor: pointer;
+    color:#369;
+}
